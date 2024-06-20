@@ -1,11 +1,11 @@
-#include "dfs.hpp"
+#include "task7.hpp"
 
 #include <iostream>
 #include <set>
 #include <stack>
 #include <vector>
 
-void initGraph(std::vector<std::multiset<int>>& graph) {
+void Task7::initGraph(std::vector<std::multiset<int>>& graph) {
   int N = 0, M = 0;
 
   std::cin >> N >> M;
@@ -19,15 +19,15 @@ void initGraph(std::vector<std::multiset<int>>& graph) {
   }
 }
 
-void printResult(const std::set<int>& component) {
+void Task7::printResult(const std::set<int>& component) {
   std::cout << component.size() << std::endl;
   for (const int& i : component) {
     std::cout << i + 1 << " ";
   }
 }
 
-void dfs(const std::vector<std::multiset<int>>& graph,
-         std::set<int>& component) {
+void Task7::dfs(const std::vector<std::multiset<int>>& graph,
+                std::set<int>& component) {
   component.insert(0);
 
   // "Лобовое" решение

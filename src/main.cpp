@@ -2,15 +2,15 @@
 #include <string>
 #include <vector>
 
-#include "dfs.hpp"
+#include "task8.hpp"
 
 int main() {
   std::vector<std::multiset<int>> Graph;
-  std::set<int> Component;
-  initGraph(Graph);
+  std::vector<std::set<int>> Components;
+  Task8::initGraph(Graph);
 
-  dfs(Graph, Component);
+  Task8::dfs(Graph, Components);
 
-  printResult(Component);
+  Task8::printResult(Components);
   return 0;
 }
