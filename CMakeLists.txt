@@ -11,8 +11,9 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE src)
 
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     src/main.cpp
-    src/task7.hpp src/task7.cpp
-    src/task8.hpp src/task8.cpp
-    src/task74.hpp src/task74.cpp
-    src/task17.hpp src/task17.cpp
+    src/task7.hpp 
+    src/task8.hpp 
+    src/task74.hpp 
+    src/task17.hpp 
+    src/task142.hpp 
 )
