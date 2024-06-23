@@ -15,7 +15,7 @@ namespace Task142 {
 
 void initTokens(std::vector<std::string>& tokens) {
   std::string expression;
-  std::getline(std::cin, expression);
+  std::cin >> expression;
   std::stringstream ss(expression);
 
   std::string token;
@@ -36,9 +36,9 @@ void solve() {
   std::stack<int> calc;
   for (const auto& t : Tokens) {
     if (Operations.count(t) > 0) {
-      int op2 = calc.top();
-      calc.pop();
       int op1 = calc.top();
+      calc.pop();
+      int op2 = calc.top();
       calc.pop();
       calc.push(Operations[t](op1, op2));
     } else {

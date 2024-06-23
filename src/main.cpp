@@ -1,6 +1,6 @@
-#include "task142.hpp"
+#include "task103.hpp"
 
 int main() {
-  Task142::solve();
+  Task103::solve();
   return 0;
 }
