@@ -17,4 +17,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     src/task17.hpp 
     src/task142.hpp 
     src/task103.hpp 
+    src/task62.hpp 
+    src/task130.hpp 
+    src/task83.hpp
 )
