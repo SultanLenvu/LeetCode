@@ -1,7 +1,7 @@
-#include "task9.hpp"
+#include "task10.hpp"
 
 int main() {
-  Task9::solve();
+  Task10::solve();
 
   return 0;
 }
